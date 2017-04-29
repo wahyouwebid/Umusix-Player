@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:background="#999"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uwastudios.umusix.Player">
+
+    <ImageButton
+        android:background="@drawable/playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnPlay" />
+
+    <ImageButton
+        android:background="@drawable/ic_skip_previous_white_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnPlay"
+        android:id="@+id/btnPrev" />
+
+    <ImageButton
+        android:background="@drawable/ic_skip_next_white_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnPlay"
+        android:id="@+id/btnNext" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_skip_previous_white_48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnNext"
+        android:id="@+id/btnNext2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_skip_next_white_48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnPrev"
+        android:id="@+id/btnPrev2" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/seekBar" />
+
+
+</RelativeLayout>
